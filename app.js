@@ -5,11 +5,11 @@ const routes = require('./routes')
 require('./config/mongoose')
 
 // set view engine
-app.engine('hbs', exphbs({
-  defaultLayout: 'main',
-  extname: 'hbs'
-}))
+app.engine('hbs', exphbs({ defaultLayout: 'main', extname: 'hbs' }))
 app.set('view engine', 'hbs')
+
+// set static files
+app.use(express.static('public'))
 
 app.use(routes)
 
