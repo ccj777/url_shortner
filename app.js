@@ -13,6 +13,9 @@ app.set('view engine', 'hbs')
 // set static files
 app.use(express.static('public'))
 
+// 要用POST時需要這行
+app.use(express.urlencoded({ extended: true }))
+
 app.use(routes)
 
 app.listen(3000, () => {
