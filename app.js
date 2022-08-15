@@ -20,5 +20,4 @@ app.use(routes)
 
 app.listen(3000, () => {
   console.log('The app is listening on http://localhost:3000')
-  console.log(generateShortenUrl(5))
 })
