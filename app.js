@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars')
 const routes = require('./routes')
 require('./config/mongoose')
 
-const generateShortenUrl = require('./generate-shortened-url')
+
 
 // set view engine
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: 'hbs' }))
